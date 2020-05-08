@@ -1,0 +1,70 @@
+[{
+    "id": 0,
+    "title": "Difficulty falling asleep",
+    "options": [
+      { "name": "None", "value": 0},
+      { "name": "Mild", "value": 1},
+      { "name": "Moderate", "value": 2},
+      { "name": "Severe", "value": 3},
+      { "name": "Very severe", "value": 4 }]
+  },
+  {
+    "id": 1,
+    "title": "Difficulty staying asleep",
+    "options": [
+      { "name": "None", "value": 0},
+      { "name": "Mild", "value": 1},
+      { "name": "Moderate", "value": 2},
+      { "name": "Severe", "value": 3},
+      { "name": "Very severe", "value": 4 }]
+  },
+  {
+    "id": 2,
+    "title": "Problems waking up too early",
+    "options": [
+      { "name": "None", "value": 0},
+      { "name": "Mild", "value": 1},
+      { "name": "Moderate", "value": 2},
+      { "name": "Severe", "value": 3},
+      { "name": "Very severe", "value": 4 }]
+  },
+  {
+    "id": 3,
+    "title": "How SATISFIED/DISSATISFIED are you with your CURRENT sleep pattern?",
+    "options": [
+      { "name": "Very satisfied", "value": 0},
+      { "name": "Satisfied", "value": 1},
+      { "name": "Moderately satisfied", "value": 2},
+      { "name": "Dissatisfied", "value": 3},
+      { "name": "Very dissatisfied", "value": 4 }]
+  },
+  {
+    "id": 4,
+    "title": "How NOTICEABLE to others do you think your sleep problem is in terms of impairing the quality of your life?",
+    "options": [
+      { "name": "Not at all noticeable", "value": 0},
+      { "name": "A little", "value": 1},
+      { "name": "Somewhat", "value": 2},
+      { "name": "Much", "value": 3},
+      { "name": "Very much noticeable", "value": 4 }]
+  },
+  {
+    "id": 5,
+    "title": "How WORRIED/DISTRESSED are you about your current sleep problem?",
+    "options": [
+      { "name": "Not worried at all", "value": 0},
+      { "name": "A little", "value": 1},
+      { "name": "Somewhat", "value": 2},
+      { "name": "Much", "value": 3},
+      { "name": "Very much worried", "value": 4 }]
+  },
+  {
+    "id": 6,
+    "title": "To what extent do you consider your sleep problem to INTERFERE with your daily functioning (e.g. daytime fatigue, mood, ability to function at work/daily chores, concentration, memory, mood, etc.) CURRENTLY?",
+    "options": [
+      { "name": "Not at all interfering", "value": 0},
+      { "name": "A little", "value": 1},
+      { "name": "Somewhat", "value": 2},
+      { "name": "Much", "value": 3},
+      { "name": "Very much interfering", "value": 4 }]
+  }]
