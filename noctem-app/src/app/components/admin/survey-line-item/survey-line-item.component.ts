@@ -1,32 +1,22 @@
-import { Component, OnInit, Input, Output, EventEmitter }  from '@angular/core';
+import { Component, Input, Output, EventEmitter }  from '@angular/core';
 import { Survey }                                          from '../../../models/survey.model';
 
 @Component({
   selector: 'survey-line-item',
   templateUrl: './survey-line-item.component.html',
-  styleUrls: ['./survey-line-item.component.scss'],
-  inputs: ['survey']
+  styleUrls: ['./survey-line-item.component.scss']
 })
-export class SurveyLineItemComponent implements OnInit {
+export class SurveyLineItemComponent {
 
+  @Input()
   survey: Survey;
 
+  // naming maybe just "delete"
   @Output()
-  elementDeleted: EventEmitter<any> = new EventEmitter();
+  delete: EventEmitter<void> = new EventEmitter();
 
-  ngOnInit(): void {
-  }
-
-  createdAt() {
-      return new Date(this.survey.createdAt).toLocaleString();
-  }
-
-  updatedAt() {
-    return this.survey.updatedAt ? new Date(this.survey.updatedAt).toLocaleString() : this.createdAt();
-  }
-
-  delete() {
-    this.elementDeleted.emit();
+  deleteSurvey() {
+    this.delete.emit();
   }
 
   total() {

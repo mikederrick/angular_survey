@@ -5,7 +5,7 @@ import { Survey }                    from '../../models/survey.model';
 @Component({
   selector: 'app-admin',
   templateUrl: './admin.component.html',
-  styleUrls: []
+  styleUrls: ['./survey-line-item/survey-line-item.component.scss']
 })
 export class AdminComponent implements OnInit {
 
@@ -17,11 +17,15 @@ export class AdminComponent implements OnInit {
 
   deleteElement(index) {
     this.surveysService.delete(this.surveys[index]).subscribe(() => {
-      this.surveys.splice(index, 1);
+      this.requestSurveys();
     })
   }
 
   ngOnInit(): void {
+    this.requestSurveys();
+  }
+
+  requestSurveys() {
     this.surveysService.all().subscribe((response: Survey[]) => {
       this.surveys = response;
     })

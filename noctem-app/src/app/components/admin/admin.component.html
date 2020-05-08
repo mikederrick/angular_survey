@@ -1,5 +1,14 @@
 <div>
+    <div class="row">
+        <div class="col"><b>UUID</b></div>
+        <div class="col"><b>Score</b></div>
+        <div class="col"><b>Category</b></div>
+        <div class="col desktop"><b>Created At</b></div>
+        <div class="col desktop"><b>Updated At</b></div>
+        <div class="col"><b>Delete</b></div>
+    </div>
+
     <survey-line-item 
         *ngFor="let survey of surveys; let i = index" [attr.data-index]="i" [survey]="survey"
-        (elementDeleted)="deleteElement(i)"></survey-line-item>
+        (delete)="deleteElement(i)"></survey-line-item>
 </div>

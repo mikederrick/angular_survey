@@ -98,8 +98,11 @@ app.post("/api/surveys/current/complete", (req, res) => {
 
 app.use('*', express.static('noctem-app/dist/noctem'));
 
-surveyStore.connect()
-           .then(() => {
-             app.listen(5000, () => console.log('Server running...'))
-           })
-           .catch(err => console.log(`Failed to start server: ${err}`));
+// Wait for mongo to start up
+setTimeout(() => {
+  surveyStore.connect()
+             .then(() => {
+               app.listen(4000, '0.0.0.0', () => console.log('Server running...'))
+             })
+             .catch(err => console.log(`Failed to start server: ${err}`));
+}, 12000)

@@ -1,6 +1,15 @@
 ---
   version: "3.3"
   services:
+    app:
+      restart: always
+      image: sewliothewise/insomnia_survey:latest
+      ports:                                    
+        - "4000:4000"
+      environment:
+        - MONGO_HOST=mongo   
+      depends_on:
+        - mongo
     mongo:
       image: mongo
       restart: always

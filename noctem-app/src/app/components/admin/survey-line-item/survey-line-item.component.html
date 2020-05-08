@@ -2,7 +2,7 @@
     <div class="col"><a target="_blank" href="/admin/surveys/{{ survey.uuid }}">{{ survey.uuid }}</a></div>
     <div class="col">{{ total() }}</div>
     <div class="col">{{ category() }}</div>
-    <div class="col desktop">{{ createdAt() }}</div>
-    <div class="col desktop">{{ updatedAt() }}</div>
-    <div class="col"><img (click)="delete()" src="/assets/images/trash.svg"></div>
+    <div class="col desktop">{{ survey.createdAt | date : 'short' }}</div>
+    <div class="col desktop">{{ survey.updatedAt | date : 'short'  }}</div>
+    <div class="col"><img (click)="deleteSurvey()" src="/assets/images/trash.svg"></div>
 </div>

@@ -1,7 +1,8 @@
 const MongoClient              = require('mongodb').MongoClient;
 
 const SURVEYS_COLLECTION_KEY   = 'SURVEYS_COLLECTION_KEY';
-const MONGO_URL                = 'mongodb://localhost:27017';
+const MONGO_HOST                = process.env.MONGO_HOST || 'localhost';
+const MONGO_URL                = `mongodb://${MONGO_HOST}:27017`;
 const MONGO_DB_NAME            = 'surveys_store';
 
 class Datastore {
