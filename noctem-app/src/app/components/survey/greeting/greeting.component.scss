@@ -1,0 +1,29 @@
+:host {
+    text-align: center;
+    font-size: 18pt;
+
+    .resume-container {
+
+        .title {
+            margin-top: 5vh;
+            width: 70vw;
+            margin-left: 15vw;
+            line-height: 30pt;
+        }
+
+        .options {
+            margin-top: 2.5vh;
+            width: 60vw;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            margin-left: 20vw;
+            margin-right: 20vw;
+
+            .option {
+                margin-top: 2vh;
+            }
+        }
+    }
+
+}

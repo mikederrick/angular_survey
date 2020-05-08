@@ -1,0 +1,20 @@
+@import "../../../../variables.scss";
+
+:host {
+    width: 100%;
+    display: flex;
+    background: $blue;
+
+    .title {
+        margin-left: 20px;
+        color: white;
+        font-size: 20pt;
+        padding-top: 20px;
+        padding-bottom: 20px;
+
+        a {
+            color: white;
+            text-decoration: none;
+        }
+    }
+}

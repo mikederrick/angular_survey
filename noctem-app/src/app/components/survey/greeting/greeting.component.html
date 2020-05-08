@@ -1,0 +1,11 @@
+<div class="greeting-component">
+    <div class="resume-container" *ngIf="showResume">
+        <div class="title">It looks like you've already started a survey, would you like to continue the existing survey, or start a new one?</div>
+        <div class="options">
+            <div (click)="resumeSurvey()" class="option answer-button">Resume Survey</div>
+        </div>
+        <div class="options">
+            <div (click)="takeSurvey()" class="option answer-button">Start Again</div>
+        </div>
+    </div>
+</div>

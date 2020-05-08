@@ -1,0 +1,29 @@
+/* You can add global styles to this file, and also import other style files */
+body {
+    margin: 0;
+    font-family: Helvetica;
+}
+
+.answer-button {
+    width: fit-content;
+    margin-top: 3vh;
+    border: 1px solid;
+    padding: 10px 20px 10px 20px;
+    min-width: 300px;
+    margin-top: 1.5vh;
+    border-radius: 32px;
+    cursor: pointer;
+    transition: all 0.3s;
+    transform: scale(1);
+    margin-top: 0px;
+    font-size: 14pt;
+
+    @media only screen and (max-width: 768px) {
+        min-width: auto;
+        font-size: 13pt;
+    }
+
+    &:hover {
+        transform: scale(1.05);
+    }    
+}

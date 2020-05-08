@@ -1,0 +1,5 @@
+<div>
+    <survey-line-item 
+        *ngFor="let survey of surveys; let i = index" [attr.data-index]="i" [survey]="survey"
+        (elementDeleted)="deleteElement(i)"></survey-line-item>
+</div>

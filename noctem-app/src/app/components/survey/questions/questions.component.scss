@@ -1,0 +1,66 @@
+@import "../../../../variables.scss";
+
+:host {
+    text-align: center;
+
+    .title {
+        width: 70vw;
+        margin-left: 15vw;
+        line-height: 30pt;
+        @media only screen and (max-width: 768px) {
+            line-height: 22pt;
+            font-size: 14pt;
+        }
+    }
+
+    .description {
+        margin-top: 5vh;
+        font-size: 15pt;
+    }
+
+    .navigation {
+        .next {
+            position: absolute;
+            bottom: 10vh;
+            right: 10vw;
+        }
+
+        .back {
+            position: absolute;
+            bottom: 10vh;
+            left: 10vw;
+        }
+    }
+
+    .question {
+        margin-top: 2vh;
+        flex-wrap: wrap;
+        width: 80vw;
+        padding-top: 4vh;
+        font-size: 18pt;
+        text-align: center;
+        width: 100vw;
+
+        .answers {
+            margin-top: 5.5vh;
+            width: 60vw;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            margin-left: 20vw;
+            margin-right: 20vw;
+            .answer {
+                width: 100vw;;
+                margin-top: 1.5vh;
+                &:hover {
+                    transform: scale(1.05);
+                }
+
+                &.selected {
+                    background: $dark;
+                    color: white;
+                }
+            }
+        }
+    }
+}
