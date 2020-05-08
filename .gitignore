@@ -1,3 +1,5 @@
 node_modules
 mongo-db
 package-lock.json
+noctem-app/dist
+noctem-app/node_modules

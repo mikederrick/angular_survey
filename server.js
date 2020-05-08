@@ -11,6 +11,7 @@ const SURVEY_KEY               = 'SURVEY_ID';
 
 app.use(cookieParser());
 app.use(bodyParser());
+app.use(express.static('noctem-app/dist/noctem'))
 
 app.get("/api/questions", (req, res) => {
   res.json(SURVEY)
@@ -94,6 +95,8 @@ app.post("/api/surveys/current/complete", (req, res) => {
     res.status(400).json({success: false});
   }
 })
+
+app.use('*', express.static('noctem-app/dist/noctem'));
 
 surveyStore.connect()
            .then(() => {
